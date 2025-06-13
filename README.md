@@ -23,7 +23,7 @@ Descărcăm distributivul Debian pentru servere pentru arhitectura x64 (fără i
 
 Vom crea un disc virtual pe care vom instala sitemul de operare.
 
-![Debian](1.png)
+lab1/1.png
 
 Mutăm sistemul de operare și discul virtual într-un folder aparte
 

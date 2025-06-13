@@ -27,7 +27,7 @@ Vom crea un disc virtual pe care vom instala sitemul de operare.
 
 Mutăm sistemul de operare și discul virtual într-un folder aparte
 
-![Folder aparte](2.png)
+![2](https://github.com/user-attachments/assets/3b380406-c8f3-4ffe-bfab-a9079afa153c)
 
 ### 2.3 Instalare Debian
 
@@ -37,66 +37,66 @@ Instalăm SO Debian pe mașina virtuală. Pentru aceasta executăm comanda:
 qemu-system-x86_64 -hda debian.qcow2 -cdrom dvd/debian.iso -boot d -m 2G
 ```
 
-![Instalare Debian](3.png)
+![3](https://github.com/user-attachments/assets/427ba1b2-0df3-45ab-812d-2933e932f2c0)
 
 Apare fereastra următoare:\
 Alegem Graphical install.
 
-![Debian2](4.png)
+![4](https://github.com/user-attachments/assets/a255659b-7b09-4a44-a5a3-4be28ec57f17)
 
 Alegem limba sistemului:
 
-![Limba](5.png)
+![5](https://github.com/user-attachments/assets/5d0f7e26-b88f-4f1c-b68a-b94696d56a79)
 
 Alegem regiunea noastră:
 
-![Regiune](6.png)
+![6](https://github.com/user-attachments/assets/3c63fbf5-6a54-4fab-afdf-b831f31f5d98)
 
 Alegem limba tastaturii:
 
-![Limba](7.png)
+![7](https://github.com/user-attachments/assets/f84f3f3e-a6b3-4ca0-bf24-e6abc5731f87)
 
 Introducem următoarele date:
 
 - Hostname:
 
-![Hostname](9.png)
+![9](https://github.com/user-attachments/assets/aef8ac2e-ced7-4f4c-9f19-e369720f6eff)
 
 - Root password:
 
-![Password](10.png)
+![10](https://github.com/user-attachments/assets/21739bc3-64d7-4217-8912-ac6611b45474)
 
 - Nume utilizator: 
 
-![Username](11.png)
+![11](https://github.com/user-attachments/assets/a108fc18-4622-4540-adc7-efbacd19c7fe)
 
 Selectăm Guided - use entire disk, după alegem unicul disc.
 
-![Partition](12.png)
+![12](https://github.com/user-attachments/assets/d942ab4f-fa7d-4722-8fbf-4fc6a56eedb7)
 
 Punem toate fișierele pe o partiție.
 
-![1Partition](13.png)
+![13](https://github.com/user-attachments/assets/a87b130c-ca54-4eee-a787-445d8a8cd255)
 
 Alegem butonul Yes.
 
-![YES](14.png)
+![14](https://github.com/user-attachments/assets/281feef9-a462-4b01-88b4-2fe693e52910)
 
 Așteptăm finalizarea procesului de instalare a sistemului:
 
-![Instalare](15.png)
+![15](https://github.com/user-attachments/assets/769b8702-76d6-4959-af23-041d8f7a97ac)
 
 Alegem serverul:
 
-![Server](16.png)
+![16](https://github.com/user-attachments/assets/349ddb36-2155-45dc-8975-1aa1892e0cc2)
 
 Alegemăm următoarele colecții suplimentare pentru instalare în sistemul nostru:
 
-![Colectii](17.png)
+![17](https://github.com/user-attachments/assets/02a52819-5c31-4b7a-8ae6-5693efe07c8f)
 
 Finisăm instalarea:
 
-![Finish](18.png)
+![18](https://github.com/user-attachments/assets/804f519b-828b-43fe-b0f2-d606ca19cd2c)
 
 ### 2.4 Rulare
 
@@ -111,7 +111,7 @@ Sistemul de operare se va porni și va apărea GRUB, care va alege Debian.
 
 Ajungem la prompt-ul cu login. Acum, putem să minimizăm mașina virtuală, deoarece nu vom lucra în ea
 
-![qemu](19.png)
+![19](https://github.com/user-attachments/assets/3b1f08a6-4a4f-471a-a13c-a68423914e13)
 
 Deschidem un terminal și ne conectăm la mașina virtuală cu ajutorul la SSH:
 
@@ -130,7 +130,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 Am întrat în terminalul mașinii virtuale:
 
-![virtual](20.png)
+![20](https://github.com/user-attachments/assets/25c89b56-562b-436f-8f1e-4abf8f6e684f)
 
 Ne conectăm ca administrator pentru a facea update la sistemul de operare:
 
@@ -141,8 +141,7 @@ su
 #Facem update la sistem
 apt update -y
 ```
-
-![update](21.png)
+![21](https://github.com/user-attachments/assets/229ba41a-3532-4859-b930-c7cd40c161e6)
 
 Instalăm LAMP în mașina virtuală:
 
@@ -178,15 +177,15 @@ mv drupal-10.0.5 /var/www/drupal
 
 Creăm din linia de comandă baza de date drupal_db și utilizatorul bazei de date cu numele nostru:
 
-![BD](22.png)
+![22](https://github.com/user-attachments/assets/3d66055e-a123-4ff2-9a05-dbe5b74d6e3e)
 
 În directorul /etc/apache2/sites-available creăm fișierul 01-phpmyadmin.conf cu conținutul din imagine:
 
-![file](23.png)
+![23](https://github.com/user-attachments/assets/f7d15c21-42d9-4ffd-92a3-7ac940ae556b)
 
 În directorul /etc/apache2/sites-available creăm fișierul 02-drupal.conf cu conținutul din imagine:
 
-![drupal](24.png)
+![24](https://github.com/user-attachments/assets/e20d1074-5ce6-45cc-9f99-cead804621a2)
 
 Pentru a activa configurațiile, executăm comenzile:
 
@@ -211,7 +210,8 @@ Adăugăm în fișierul /etc/hosts următoarele linii:
 Verificăm disponibilitatea site-urilor pe http://drupal.localhost:1080 și
 http://phpmyadmin.localhost:1080 din browser:
 
-![Drupal](25.png)
+![25](https://github.com/user-attachments/assets/945bf963-7f13-4c00-a7c2-a9fa21251de1)
+
 
 ![Phpmyadmin](26.png)
 

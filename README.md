@@ -212,14 +212,13 @@ http://phpmyadmin.localhost:1080 din browser:
 
 ![25](https://github.com/user-attachments/assets/945bf963-7f13-4c00-a7c2-a9fa21251de1)
 
-
-![Phpmyadmin](26.png)
+![26](https://github.com/user-attachments/assets/76b33f4e-6c58-476c-a511-d7d96a6098ef)
 
 Ne logăm în PhpMyAdmin cu user passowrd. După configurăm Drupal.
 
 Alegem Standard Installation:
 
-![standard](27.png)
+![27](https://github.com/user-attachments/assets/5c195568-7675-4e6f-80e7-7b158c85f0f6)
 
 Instalăm extensiile necesare:
 
